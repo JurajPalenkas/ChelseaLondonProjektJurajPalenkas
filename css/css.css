@@ -1,0 +1,234 @@
+/* Základné farby a štýl */
+body {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+/* Úprava veľkosti písma a zarovnania obrázkov v sekcii Main */
+main img {
+  width: 100%;
+  max-height: 700px;
+  object-fit:fill;
+  object-position: center;
+}
+
+main p {
+  font-size: 14px;
+}
+
+/* Úpravy pre formulár */
+.form-control {
+  border-radius: 10px; /* Zaoblené rohy políčok */
+}
+
+/* Prispôsobenie štýlu tlačidla */
+.btn-primary {
+  background-color: #FF5733; /* Oranžová farba */
+  border-color: #FF5733; /* Odtieň oranžovej pre rámček */
+}
+.btn-primary:hover {
+  background-color: #FF814A; /* Farebný efekt pri prejdení myšou */
+  border-color: #FF814A;
+}
+.img-nizsia {
+  height: auto;
+  object-fit: cover; 
+  
+}
+/* Nadpis */
+h2 strong {
+  font-weight: bold;
+}
+
+/* Prvé <p> */
+p:first-of-type {
+  color: #f0f0f0;
+  font-style: italic;
+}
+
+
+/* Štýly pre tabuľku */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+.flex-container {
+  display: flex;
+}
+
+.table-container {
+  flex: 1;
+  margin-right: 10px;
+}
+
+/* Light blue pre prvých 4 */
+.special-table tr:nth-child(-n+4) {
+  background-color: lightblue;
+}
+
+/* Light orange pre 5. pozíciu */
+.special-table tr:nth-child(5) {
+  background-color: lightcoral;
+}
+
+/* Light green pre 6. pozíciu */
+.special-table tr:nth-child(6) {
+  background-color: lightgreen;
+}
+
+/* Bledo červená pre posledné tri pozície */
+.special-table tr:nth-last-child(-n+3) {
+  background-color: #FFCCCC; /* Môžeš zmeniť na iný odtieň */
+}
+.special-table tr:first-child {
+  background-color: lightblue;
+}
+.special-table tr:nth-last-child(3) {
+  border-top: 2px solid red;
+}
+
+/* Tento štýl je iba pre mobilné zariadenia */
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .table-container {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+/*FOOTER*/
+
+/* Ikonky */
+.footer-social a {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+/* Prispôsobenie pozadia a farby textu pre kontaktne informácie */
+.contact-info {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 10px;
+}
+
+/* Zarovnanie textu v kontakte na stred */
+.contact-info p {
+  text-align: center;
+}
+
+/* Prispôsobenie štýlu odkazov pre email a telefón */
+.contact-info a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.nav-link {
+  transition: transform 0.3s ease; /* Plynulý prechod */
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+}
+/* Základné štýly pre footer */
+
+footer {
+  background-color: #343a40; /* Tvoja farba pre footer */
+  color: #fff; /* Farba textu */
+  padding: 20px; /* Vnútorné odsadenie */
+}
+
+footer p {
+  margin-bottom: 10px; /* Medzera pod odstavcom */
+}
+
+.footer-social {
+  margin-top: 5px; /* Medzera nad sociálnymi ikonami */
+}
+
+.text-light {
+  color: #fff !important; /* Farba ikon */
+}
+
+.text-light:hover {
+  color: blue !important; /* Farba ikoniek po najazdení myšou */
+}
+
+
+
+
+/* Obrázky v Novinkách*/
+
+.img-nkunku {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Tieň */
+  width: 50%; /* Šírka obrázka na 100% */
+  height: auto; /* Automatická výška */
+}
+.img-reece{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Tieň */
+  height: auto; /* Automatická výška */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Cookies*/
+.cookie-consent {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  z-index: 1000;
+}
+
+.cookie-consent button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
