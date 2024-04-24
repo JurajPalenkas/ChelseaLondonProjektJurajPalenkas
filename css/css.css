@@ -48,63 +48,58 @@ p:first-of-type {
 
 
 /* Štýly pre tabuľku */
-.table {
+/* Štýly pre tabuľku */
+.special-table {
   width: 100%;
   border-collapse: collapse;
-  border: 1px solid #ddd;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+  transition: 0.3s;
+  background-color: #ffffff; 
 }
 
-.table th,
-.table td {
-  padding: 8px;
+.special-table:hover {
+  .special-table:hover {
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    background-color: #ffffff; 
+  }
+}
+
+.special-table th,
+.special-table td {
+  padding: 15px;
   text-align: left;
-  border: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  transition: 0.3s;
 }
 
-.table th {
+.special-table th {
   background-color: #f2f2f2;
-  color: #333;
-  font-weight: bold;
+  font-size: 18px;
 }
 
-.table-striped tbody tr:nth-of-type(odd) {
-  background-color: #f9f9f9;
-}
-.flex-container {
-  display: flex;
+.special-table td {
+  font-size: 16px;
 }
 
-.table-container {
-  flex: 1;
-  margin-right: 10px;
+.special-table tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
-/* Light blue pre prvých 4 */
-.special-table tr:nth-child(-n+4) {
-  background-color: lightblue;
+.special-table tr:hover {
+  transform: scale(1.02);
+  background-color: #f5f5f5;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
+/* Tento štýl je iba pre mobilné zariadenia */
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
 
-/* Light orange pre 5. pozíciu */
-.special-table tr:nth-child(5) {
-  background-color: lightcoral;
+  .table-container {
+    margin-bottom: 20px;
+  }
 }
-
-/* Light green pre 6. pozíciu */
-.special-table tr:nth-child(6) {
-  background-color: lightgreen;
-}
-
-/* Bledo červená pre posledné tri pozície */
-.special-table tr:nth-last-child(-n+3) {
-  background-color: #FFCCCC; /* Môžeš zmeniť na iný odtieň */
-}
-.special-table tr:first-child {
-  background-color: lightblue;
-}
-.special-table tr:nth-last-child(3) {
-  border-top: 2px solid red;
-}
-
 /* Tento štýl je iba pre mobilné zariadenia */
 @media (max-width: 768px) {
   .flex-container {

@@ -44,273 +44,61 @@
 </section>
 <!-------------------------------TABULKA-------------------------------->
 
-    <section class="container-fluid mt-5">
-            <div class="row">
-              <div class="col-md-12 mt-4">
-                <h2>Aktuálna tabuľka Premier League</h2>
-            <div class="table-container special-table">
-             <table border="1">
-                <thead>
-                  <tr>
-                    <th>Position</th>
-                    <th>Club</th>
-                    <th>Played</th>
-                    <th>Won</th>
-                    <th>Drawn</th>
-                    <th>Lost</th>
-                    <th>GF</th>
-                    <th>GA</th>
-                    <th>GD</th>
-                    <th>Points</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Liverpool</td>
-                    <td>16</td>
-                    <td>11</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>36</td>
-                    <td>15</td>
-                    <td>21</td>
-                    <td>37</td>
-                  </tr>
-                  <tr>
-       <td>2</td>
-       <td>Arsenal</td>
-       <td>16</td>
-       <td>11</td>
-       <td>3</td>
-       <td>2</td>
-       <td>33</td>
-      <td>15</td>
-       <td>18</td>
-      <td>36</td>
-      </tr>
-      <td>3</td>
-      <td>Aston Villa</td>
-      <td>16</td>
-      <td>11</td>
-      <td>2</td>
-      <td>3</td>
-      <td>35</td>
-      <td>20</td>
-      <td>15</td>
-      <td>35</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>Manchester City</td>
-      <td>16</td>
-      <td>10</td>
-      <td>3</td>
-      <td>3</td>
-      <td>38</td>
-      <td>18</td>
-      <td>20</td>
-      <td>33</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>Tottenham Hotspur</td>
-      <td>16</td>
-      <td>9</td>
-      <td>3</td>
-      <td>4</td>
-      <td>33</td>
-      <td>23</td>
-      <td>10</td>
-      <td>30</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>Manchester United</td>
-      <td>16</td>
-      <td>9</td>
-      <td>0</td>
-      <td>7</td>
-      <td>18</td>
-      <td>21</td>
-      <td>-3</td>
-      <td>27</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>Newcastle United</td>
-      <td>16</td>
-      <td>8</td>
-      <td>2</td>
-      <td>6</td>
-      <td>33</td>
-      <td>21</td>
-      <td>12</td>
-      <td>26</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>Brighton and Hove Albion</td>
-      <td>16</td>
-      <td>7</td>
-      <td>5</td>
-      <td>4</td>
-      <td>33</td>
-      <td>28</td>
-      <td>5</td>
-      <td>26</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>West Ham United</td>
-      <td>16</td>
-      <td>7</td>
-      <td>3</td>
-      <td>6</td>
-      <td>26</td>
-      <td>30</td>
-      <td>-4</td>
-      <td>24</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>Fulham</td>
-      <td>16</td>
-      <td>6</td>
-      <td>3</td>
-      <td>7</td>
-      <td>26</td>
-      <td>26</td>
-      <td>0</td>
-      <td>21</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>Brentford</td>
-      <td>16</td>
-      <td>5</td>
-      <td>4</td>
-      <td>7</td>
-      <td>23</td>
-      <td>22</td>
-      <td>1</td>
-      <td>19</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>Chelsea</td>
-      <td>16</td>
-      <td>5</td>
-      <td>4</td>
-      <td>7</td>
-      <td>26</td>
-      <td>26</td>
-      <td>0</td>
-      <td>19</td>
-    </tr>
-    <tr>
-      <td>13</td>
-      <td>Wolverhampton Wanderers</td>
-      <td>16</td>
-      <td>5</td>
-      <td>4</td>
-      <td>7</td>
-      <td>21</td>
-      <td>26</td>
-      <td>-5</td>
-      <td>19</td>
-    </tr>
-    <tr>
-      <td>14</td>
-      <td>Bournemouth</td>
-      <td>16</td>
-      <td>5</td>
-      <td>4</td>
-      <td>7</td>
-      <td>21</td>
-      <td>30</td>
-      <td>-9</td>
-      <td>19</td>
-    </tr>
-    <tr>
-      <td>15</td>
-      <td>Crystal Palace</td>
-      <td>16</td>
-      <td>4</td>
-      <td>4</td>
-      <td>8</td>
-      <td>15</td>
-      <td>23</td>
-      <td>-8</td>
-      <td>16</td>
-    </tr>
-    <tr>
-      <td>16</td>
-      <td>Nottingham Forest</td>
-      <td>16</td>
-      <td>3</td>
-      <td>5</td>
-      <td>8</td>
-      <td>17</td>
-      <td>28</td>
-      <td>-11</td>
-      <td>14</td>
-    </tr>
-    <tr>
-      <td>17</td>
-      <td>Everton *</td>
-      <td>16</td>
-      <td>7</td>
-      <td>2</td>
-      <td>7</td>
-      <td>20</td>
-      <td>20</td>
-      <td>0</td>
-      <td>13</td>
-    </tr>
-    <tr>
-      <td>18</td>
-      <td>Luton Town</td>
-      <td>16</td>
-      <td>2</td>
-      <td>3</td>
-      <td>11</td>
-      <td>17</td>
-      <td>32</td>
-      <td>-15</td>
-      <td>09</td>
-    </tr>
-    <tr>
-      <td>19</td>
-      <td>Burnley</td>
-      <td>16</td>
-      <td>2</td>
-      <td>2</td>
-      <td>12</td>
-      <td>16</td>
-      <td>34</td>
-      <td>-18</td>
-      <td>08</td>
-    </tr>
-    <tr>
-      <td>20</td>
-      <td>Sheffield United</td>
-      <td>16</td>
-      <td>2</td>
-      <td>2</td>
-      <td>12</td>
-      <td>12</td>
-      <td>41</td>
-      <td>-29</td>
-      <td>08</td>
-    </tr>
-              </table>
-            </div>
-          </div>
-        </div>
+<section class="container-fluid mt-5">
+  <div class="row">
+    <div class="col-md-12 mt-4">
+      <h2>Aktuálna tabuľka Premier League</h2>
+      <div class="table-container special-table">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Poradie</th>
+              <th scope="col">Tím</th>
+              <th scope="col">Zápasy</th>
+              <th scope="col">Bodov</th>
+            </tr>
+          </thead>
+          <tbody>
+          <?php
+          $tabulka = array(
+            array("Manchester City", 30, 75),
+            array("Liverpool", 30, 67),
+            array("Chelsea", 30, 63),
+            array("Manchester United", 30, 59),
+            array("Arsenal", 30, 54),
+            array("Tottenham", 30, 52),
+            array("West Ham", 30, 48),
+            array("Wolverhampton", 30, 47),
+            array("Leicester City", 30, 46),
+            array("Aston Villa", 30, 45),
+            array("Southampton", 30, 42),
+            array("Everton", 30, 41),
+            array("Crystal Palace", 30, 39),
+            array("Brighton", 30, 38),
+            array("Brentford", 30, 36),
+            array("Leeds United", 30, 35),
+            array("Newcastle", 30, 33),
+            array("Watford", 30, 28),
+            array("Burnley", 30, 27),
+            array("Norwich City", 30, 20)
+          );
+
+          foreach ($tabulka as $index => $tím) {
+            echo "<tr>";
+            echo "<th scope='row'>" . ($index + 1) . "</th>";
+            echo "<td>" . $tím[0] . "</td>";
+            echo "<td>" . $tím[1] . "</td>";
+            echo "<td>" . $tím[2] . "</td>";
+            echo "</tr>";
+          }
+          ?>
+          </tbody>
+        </table>
       </div>
     </div>
-    <section>
+  </div>
+</section>
+
       <!-------------------------------ZOZNAM-------------------------------->
 
       <h3>Označenie:</h3>
