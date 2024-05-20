@@ -17,10 +17,10 @@
             <a class="nav-link" href="novinky.php">Novinky</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="o-nas.php">O nás</a>
+            <a class="nav-link" href="faq.php">FAQ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="faq.php">FAQ</a>
+            <a class="nav-link" href="login.php">Login</a>
           </li>
         </ul>
       </div>

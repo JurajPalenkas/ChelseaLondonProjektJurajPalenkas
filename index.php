@@ -82,6 +82,7 @@
             array("Burnley", 30, 27),
             array("Norwich City", 30, 20)
           );
+          ;
 
           foreach ($tabulka as $index => $tím) {
             echo "<tr>";
