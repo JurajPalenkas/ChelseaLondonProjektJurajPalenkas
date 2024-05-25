@@ -8,7 +8,7 @@ class Articles {
     }
 
     public function getArticles() {
-        $query = "SELECT * FROM articles";
+        $query = "SELECT * FROM clanky";
         $result = $this->db->query($query);
 
         if ($result === false) {
@@ -26,11 +26,57 @@ class Articles {
         foreach ($articles as $article) {
             echo "<tr>";
             echo "<td>" . $article['id'] . "</td>";
-            echo "<td>" . $article['Nazov'] . "</td>";
+            echo "<td>" . $article['nazov'] . "</td>";
             echo "<td>" . $article['kontent'] . "</td>";
             echo "<td>" . $article['datum'] . "</td>";
+            echo "<td><a href='edit.php?id=" . $article['id'] . "' class='btn btn-primary'>Edit</a></td>";
+            echo "<td><a href='delete.php?id=" . $article['id'] . "' class='btn btn-danger'>Delete</a></td>";
             echo "</tr>";
         }
         echo "</table>";
         }
-}
+        public function createArticle($nazov, $kontent) {
+            $query = "INSERT INTO clanky (nazov, kontent) VALUES (:nazov, :kontent)";
+            $stmt = $this->db->prepare($query);
+        
+            $params = array(
+                ':nazov' => $nazov,
+                ':kontent' => $kontent
+            );
+        
+            $stmt->execute($params);
+            header("location:forum.php");
+        }
+        public function editArticle($id, $nazov, $kontent) {
+            $query = "UPDATE clanky SET nazov = :nazov, kontent = :kontent WHERE id = :id";
+            $stmt = $this->db->prepare($query);
+        
+            $params = array(
+                ':id' => $id,
+                ':nazov' => $nazov,
+                ':kontent' => $kontent
+            );
+        
+            $stmt->execute($params);
+            header("location:forum.php");
+        }
+        
+        public function getArticleById($id) {
+        $query = "SELECT * FROM clanky WHERE id = :id";
+        $stmt = $this->db->prepare($query);
+        $params = array(':id' => $id);
+        $stmt->execute($params);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+        }
+        public function deleteArticle($id) {
+            $query = "DELETE FROM clanky WHERE id = :id";
+            $stmt = $this->db->prepare($query);
+            $params = array(':id' => $id);
+            $stmt->execute($params);
+            header("location:forum.php");
+        }
+        
+    }
+
+
+
