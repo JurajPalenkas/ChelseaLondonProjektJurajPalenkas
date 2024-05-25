@@ -86,15 +86,15 @@ p:first-of-type {
 .special-table tr:nth-child(2),
 .special-table tr:nth-child(3),
 .special-table tr:nth-child(4) {
-  background-color: #1f1f7f; /* Dark blue */
+  background-color: #1f1f7f; 
 }
 
 .special-table tr:nth-child(5) {
-  background-color: #ff0000; /* Red */
+  background-color: #ff0000; 
 }
 
 .special-table tr:nth-child(6) {
-  background-color: #ff5733; /* Orange */
+  background-color: #33ff5f; 
 }
 
 .special-table tr:hover {

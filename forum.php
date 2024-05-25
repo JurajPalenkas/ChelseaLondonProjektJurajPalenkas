@@ -13,7 +13,7 @@
     ?>
 
     <h1>Fórum modrých trpiteľov</h1>
-
+    <a href="create.php">Vytvorenie prispevku</a> 
     <section id="forum">
         <?php
         require 'db.php';
@@ -21,6 +21,7 @@
         $articles = new Articles($conn);
         $articles->getArticles();
         ?>
+        
     </section>
 
     <?php
