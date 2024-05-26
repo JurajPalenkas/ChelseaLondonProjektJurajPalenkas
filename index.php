@@ -61,26 +61,26 @@
           <tbody>
           <?php
           $tabulka = array(
-            array("Manchester City", 30, 75),
-            array("Liverpool", 30, 67),
-            array("Chelsea", 30, 63),
-            array("Manchester United", 30, 59),
-            array("Arsenal", 30, 54),
-            array("Tottenham", 30, 52),
-            array("West Ham", 30, 48),
-            array("Wolverhampton", 30, 47),
-            array("Leicester City", 30, 46),
-            array("Aston Villa", 30, 45),
-            array("Southampton", 30, 42),
-            array("Everton", 30, 41),
-            array("Crystal Palace", 30, 39),
-            array("Brighton", 30, 38),
-            array("Brentford", 30, 36),
-            array("Leeds United", 30, 35),
-            array("Newcastle", 30, 33),
-            array("Watford", 30, 28),
-            array("Burnley", 30, 27),
-            array("Norwich City", 30, 20)
+            array("Manchester City", 38, 91),
+            array("Arsenal", 38, 89),
+            array("Liverpool", 38, 82),
+            array("Aston Villa", 38, 68),
+            array("Tottenham Hotspur", 38, 66),
+            array("Chelsea FC ", 38, 63),
+            array("Newcastle United", 38, 60),
+            array("Manchester United", 38, 60),
+            array("West Ham United", 38, 52),
+            array("Crystal Palace", 38, 49),
+            array("Brighton & Hove Albion", 38, 48),
+            array("AFC Bournemouth", 38, 48),
+            array("Fulham", 38, 47),
+            array("Wolverhampton Wanderers", 38, 46),
+            array("Everton", 38, 40),
+            array("Brentford", 38, 39),
+            array("Nottingham Forrest", 38, 32),
+            array("Luton Town", 38, 26),
+            array("Burnley", 38, 24),
+            array("Sheffield United", 38, 16)
           );
           ;
 
