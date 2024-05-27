@@ -1,36 +1,34 @@
 <?php
-// Pripojenie k databáze
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "udaje";
+require 'db.php';
+require 'classes.php';
+require 'header.php';
 
-try {
-  $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+if (isset($_POST['login'])) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
 
-  // Spracovanie prihlasovacích údajov
-  if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST["username"];
-    $password = $_POST["password"];
-
-    // Overenie prihlasovacích údajov v databáze
-    $stmt = $conn->prepare("SELECT * FROM users WHERE username = :username AND password = :password");
-    $stmt->bindParam(':username', $username);
-    $stmt->bindParam(':password', $password);
-    $stmt->execute();
-
-    if ($stmt->rowCount() == 1) {
-      // Prihlásenie úspešné
-      echo "Login successful!";
-    } else {
-      // Prihlásenie neúspešné
-      echo "Invalid username or password.";
-    }
+    $user = new User($conn);
+    $user->login($username, $password);
   }
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+<form method="post" action="login.php">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username">
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password">
+  <input type="submit" name="login" value="Login">
+</form>
 
-  $conn = null;
-} catch(PDOException $e) {
-  echo "Connection failed: " . $e->getMessage();
-}
-// Remove the closing 
+</body>
+</html>
+
