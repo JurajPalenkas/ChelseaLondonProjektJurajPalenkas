@@ -21,19 +21,21 @@ class Articles {
             $articles[] = $article;
         }
 
-        echo "<table style='width:100%; border:1px solid #0000FF; color:#0000FF; font-family:Arial;'>";
-        echo "<tr style='background-color:#0000FF; color:#FFFFFF;'><th>Article ID</th><th>Article Title</th><th>Article Content</th><th>Article Date</th></tr>";
+        
+        echo "<table class='myTable' style='width:100%; border:1px solid #0000FF; color:#0000FF; font-family:Arial;'>";
+        echo "<tr class='headerRow' style='background-color:#0000FF; color:#FFFFFF;'><th>Article ID</th><th>Article Title</th><th>Article Content</th><th>Article Date</th><th>Edit</th><th>Delete</th></tr>";
         foreach ($articles as $article) {
-            echo "<tr>";
-            echo "<td>" . $article['id'] . "</td>";
-            echo "<td>" . $article['nazov'] . "</td>";
-            echo "<td>" . $article['kontent'] . "</td>";
-            echo "<td>" . $article['datum'] . "</td>";
-            echo "<td><a href='edit.php?id=" . $article['id'] . "' class='btn btn-primary'>Edit</a></td>";
-            echo "<td><a href='delete.php?id=" . $article['id'] . "' class='btn btn-danger'>Delete</a></td>";
+            echo "<tr class='articleRow'>";
+            echo "<td class='articleId'>" . $article['id'] . "</td>";
+            echo "<td class='articleTitle'>" . $article['nazov'] . "</td>";
+            echo "<td class='articleContent'>" . $article['kontent'] . "</td>";
+            echo "<td class='articleDate'>" . $article['datum'] . "</td>";
+            echo "<td><a href='edit.php?id=" . $article['id'] . "' class='btn btn-Edit'>Edit</a></td>";
+            echo "<td><a href='delete.php?id=" . $article['id'] . "' class='btn btn-Delete'>Delete</a></td>";
             echo "</tr>";
         }
         echo "</table>";
+        
         }
         public function createArticle($nazov, $kontent) {
             $query = "INSERT INTO clanky (nazov, kontent) VALUES (:nazov, :kontent)";
