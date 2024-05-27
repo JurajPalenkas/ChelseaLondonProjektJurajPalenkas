@@ -32,11 +32,11 @@
       </div>
       <div class="row mt-5">
         <div class="col-md-12">
-          <h2><strong>Blíži sa návrat kráľa</strong></h2>
-          <p>Cobham 10.12.2023</p>
-          <p>Hráč Chelsea ktorý od podpisu zmluvy v decembri 2022 neodohral ani jeden zápas je blízko k návratu na trávniky.</p>
-          <p>Christopher Nkunku je podľa klubových lekárov späť a...</p>
-          <img src="img/nkunku4.png" alt="Obrázok 2" class="img-fluid img-nkunku">
+          <h2><strong>Srdciar roka</strong></h2>
+          <p>Cobham 20.5.2024</p>
+          <p>Kapitán,odchovanec a srdciar týmu ktorý dokáže dirigovať tempo hry</p>
+          <p>Podľa mnohých srdciar týmu a správny človek</p>
+          <img src="img/conorg.jpg" alt="Obrázok 2" class="img-fluid img-nkunku">
         </div>
       </div>
       
