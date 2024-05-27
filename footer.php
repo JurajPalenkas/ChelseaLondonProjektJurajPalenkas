@@ -1,3 +1,5 @@
+<html class="site-html">
+<body class="site-body"></body>
 <footer class="bg-dark text-light text-center py-4 d-flex justify-content-between align-items-center">
   <div class="footer-social me-auto">
     <a href="https://www.instagram.com/" target="_blank" class="text-light me-3"><i class="fab fa-instagram"></i></a>

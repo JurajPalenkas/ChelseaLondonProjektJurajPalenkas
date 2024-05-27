@@ -194,7 +194,16 @@ footer p {
 .text-light:hover {
   color: blue !important; /* Farba ikoniek po najazdení myšou */
 }
+.site-html, .site-body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
 
+.bg-dark {
+  margin-top: auto;
+}
 
 
 
@@ -379,4 +388,12 @@ input[type="submit"]:hover {
 
 .info-list li {
   margin-bottom: 10px;
+}
+.forum-title{
+  color: white;
+  font-size: 40px;
+  margin-left: 585px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
 }
