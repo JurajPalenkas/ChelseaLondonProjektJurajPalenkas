@@ -12,7 +12,7 @@
     require 'header.php';
     ?>
 
-    <h1>Fórum modrých trpiteľov</h1>
+    <h1 class="forum-title">Fórum modrých trpiteľov</h1>
     <a href="create.php" class="create">Vytvorenie prispevku</a> 
     <section id="forum">
         <?php

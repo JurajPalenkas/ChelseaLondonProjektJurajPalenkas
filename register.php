@@ -9,9 +9,9 @@ if (isset($_POST['register'])) {
 
     $user = new User($conn);
     if ($user->register($username, $password)) {
-        echo "Registration successful";
+        echo "Úspešne ste sa zaregistrovali!";
     } else {
-        echo "Registration failed";
+        echo "Nepodarilo sa zaregistrovať.Skúste použiť iné meno alebo heslo.";
     }
 }
 ?>
