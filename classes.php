@@ -77,6 +77,49 @@ class Articles {
         }
         
     }
+    class User {
+        private $db;
+    
+        public function __construct($db) {
+            $this->db = $db;
+        }
+    
+        public function register($username, $password) {
+            $query = "SELECT * FROM users WHERE username = :username";
+            $stmt = $this->db->prepare($query);
+            $stmt->execute(array(':username' => $username));
+            if ($stmt->rowCount() > 0) {
+                return false;
+            }
+        
+            
+            
+            $query = "INSERT INTO users (username, password) VALUES (:username, :password)";
+            $stmt = $this->db->prepare($query);
+            $params = array(':username' => $username, ':password' => md5($password));
+            if ($stmt->execute($params)) {
+                $login = new User($this->db);
+                return $login->login($username, $password);
+            } else {
+                return false;
+            }
+            
+        }
+        public function login($username, $password) {
+            $query = "SELECT * FROM users WHERE username = :username AND password = :password";
+            $stmt = $this->db->prepare($query);
+            $params = array(':username' => $username, ':password' => md5($password));
+            $stmt->execute($params);
+            if ($stmt->rowCount() == 1) {
+                session_start();
+                $_SESSION['username'] = $username;
+                header("location: forum.php");
+            } else {
+                return false;
+            }
+        } 
+    }
+
 
 
 
