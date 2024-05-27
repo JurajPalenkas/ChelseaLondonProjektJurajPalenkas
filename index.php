@@ -101,20 +101,21 @@
 
       <!-------------------------------ZOZNAM-------------------------------->
 
-      <h3>Označenie:</h3>
-      <ul>
-        <li>Postup do Uefa Champions League: 1., 2., 3., 4.</li>
-        <li>Postup do Europa League: 5.</li>
-        <li>Postup do UEFA Conference league: 6.</li>
-        <li>Zostup do EFL Championship: 18., 19., 20.</li>
-      </ul>
-  
-      <h2>*</h2>
-      <ul>
-        <li>Everton má odobratých 8 bodov kvôli FA a závadzaniu v rámci strát počas covidu (8pts).</li>
-        <li>Nottingham má odobraté 4 body (Rozhodnutie federácie)(4pts).</li>
-      </ul>
-    </section>
+      <section class="info-section">
+        <h3 class="info-title">Označenie:</h3>
+        <ul class="info-list">
+          <li>Postup do Uefa Champions League: 1., 2., 3., 4.</li>
+          <li>Postup do Europa League: 5.</li>
+          <li>Postup do UEFA Conference league: 6.</li>
+          <li>Zostup do EFL Championship: 18., 19., 20.</li>
+        </ul>
+
+        <h2 class="info-subtitle">*</h2>
+        <ul class="info-list">
+          <li>Everton má odobratých 8 bodov kvôli FA a závadzaniu v rámci strát počas covidu (8pts).</li>
+          <li>Nottingham má odobraté 4 body (Rozhodnutie federácie)(4pts).</li>
+        </ul>
+      </section>
     <!-------------------------------cookies-------------------------------->
 
     <div id="cookieConsent" class="cookie-consent">
