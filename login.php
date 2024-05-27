@@ -21,7 +21,7 @@ if (isset($_POST['login'])) {
   <link rel="stylesheet" href="css/css.css">
 </head>
 <body>
-<form method="post" action="login.php">
+<form class="auth-form" method="post" action="login.php">
   <label for="username">Username:</label>
   <input type="text" id="username" name="username">
   <label for="password">Password:</label>

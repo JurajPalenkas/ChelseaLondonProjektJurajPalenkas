@@ -408,3 +408,35 @@ input[type="submit"]:hover {
   text-transform: uppercase;
   letter-spacing: 0.2px;
 }
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.auth-form label {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.auth-form input[type="text"], .auth-form input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.auth-form input[type="submit"] {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #315cfd;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.auth-form input[type="submit"]:hover {
+  background-color: #214cbf;
+}

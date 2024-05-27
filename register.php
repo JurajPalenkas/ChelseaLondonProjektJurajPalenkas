@@ -25,12 +25,13 @@ if (isset($_POST['register'])) {
     <link rel="stylesheet" href="css/css.css">
 </head>
 <body>
-<form method="post">
+<form class="auth-form" method="post">
     <label for="username">Username:</label>
     <input type="text" id="username" name="username">
     <label for="password">Password:</label>
     <input type="password" id="password" name="password">
     <input type="submit" name="register" value="Register">
+</form>
 </form>
 </body>
 </html>
