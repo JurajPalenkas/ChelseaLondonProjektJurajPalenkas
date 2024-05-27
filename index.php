@@ -10,7 +10,6 @@
 
 
 
-
 <!-------------------------------NAV BAR-------------------------------->
 <body>
 <?php
@@ -75,9 +74,9 @@
             array("AFC Bournemouth", 38, 48),
             array("Fulham", 38, 47),
             array("Wolverhampton Wanderers", 38, 46),
-            array("Everton", 38, 40),
+            array("Everton*", 38, 40),
             array("Brentford", 38, 39),
-            array("Nottingham Forrest", 38, 32),
+            array("Nottingham Forrest*", 38, 32),
             array("Luton Town", 38, 26),
             array("Burnley", 38, 24),
             array("Sheffield United", 38, 16)
@@ -106,12 +105,14 @@
       <ul>
         <li>Postup do Uefa Champions League: 1., 2., 3., 4.</li>
         <li>Postup do Europa League: 5.</li>
+        <li>Postup do UEFA Conference league: 6.</li>
         <li>Zostup do EFL Championship: 18., 19., 20.</li>
       </ul>
   
       <h2>*</h2>
       <ul>
-        <li>Everton má odobratých 10 bodov kvôli FA a závadzaniu v rámci strát počas covidu (10pts).</li>
+        <li>Everton má odobratých 8 bodov kvôli FA a závadzaniu v rámci strát počas covidu (8pts).</li>
+        <li>Nottingham má odobraté 4 body (Rozhodnutie federácie)(4pts).</li>
       </ul>
     </section>
     <!-------------------------------cookies-------------------------------->
