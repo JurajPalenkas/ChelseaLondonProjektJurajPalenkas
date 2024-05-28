@@ -440,3 +440,30 @@ input[type="submit"]:hover {
 .auth-form input[type="submit"]:hover {
   background-color: #214cbf;
 }
+
+.myTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.headerRow {
+    background-color: #4CAF50;
+}
+
+.headerRow th {
+    padding: 20px 15px;
+}
+
+.articleRow {
+    border-bottom: 1px solid #f2f2f2;
+    color: #333;
+}
+
+
+.articleId, .articleTitle, .articleContent, .articleDate {
+    padding: 15px;
+}
